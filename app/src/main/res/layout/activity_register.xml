@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_for_new_account"
+        android:fontFamily="@font/qualio"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_firstname_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:id="@+id/edt_lastname_register"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="@string/last_name" />-->
+
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_password_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_confirm_password_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm"
+            android:inputType="textPassword"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:id="@+id/radio_group"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:id="@+id/rb_male"
+        android:layout_height="wrap_content"
+        android:text="@string/male"
+        android:textSize="13sp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/female"
+        android:id="@+id/rb_female"
+        android:textSize="13sp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/others"
+        android:id="@+id/rb_others"
+        android:textSize="13sp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_agree_for_the_term_of_use"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/sp_country"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_gravity="center"
+        android:id="@+id/btn_submit"
+        android:background="@drawable/rounded_button"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_ten"
+        android:gravity="center"
+        android:text="@string/creating_an_account_means_you_re_ok_with_perfect_n_audience_s_terms_of_service_and_privacy_policy"/>
+
+
+</LinearLayout>
